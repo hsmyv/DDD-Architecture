@@ -8,6 +8,6 @@
     <link rel="stylesheet" href="{{mix('css/backend/app.css')}}">
 </head>
 <body>
-
+    @yield('content')
 </body>
 </html>

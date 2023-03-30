@@ -3,12 +3,18 @@
 namespace MyApp\Http\Backend\Auth\Controllers;
 
 use MyApp\App\Controllers\Controller;
-use App\Http\Requests\Auth\LoginRequest;
+use MyApp\Http\Backend\Auth\Requests\LoginRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AuthenticatedSessionController extends Controller
 {
+
+    public function create()
+    {
+        return view('backend.auth.login');
+    }
+
     /**
      * Handle an incoming authentication request.
      *
